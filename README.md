@@ -1,6 +1,4 @@
 # Android-popularity
-Code and data for our paper "Studying Android App Popularity by Cross-Linking GitHub and Google Play Store", presented in the IEEE 26th edition of the IEEE International Conference on Software Analysis, Evolution and Reengineering, (SANER 2019)
-
 Title:
 
 Studying Android App Popularity by Cross-Linking GitHub and Google Play Stor
