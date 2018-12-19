@@ -1,0 +1,95 @@
+{
+  "sha": "4fc5c7714fb1b48ae46dcacbda287bcef9c3f6bf",
+  "commit": {
+    "author": {
+      "name": "Sam Bosley",
+      "email": "sboz88@gmail.com",
+      "date": "2013-04-26T17:55:11Z"
+    },
+    "committer": {
+      "name": "Sam Bosley",
+      "email": "sboz88@gmail.com",
+      "date": "2013-04-26T17:55:11Z"
+    },
+    "message": "Custom filter criteria should respect metadata deletion date",
+    "tree": {
+      "sha": "6ee50c308882df99f9aa3c52257d9bf9454cabc6",
+      "url": "https://api.github.com/repos/todoroo/astrid/git/trees/6ee50c308882df99f9aa3c52257d9bf9454cabc6"
+    },
+    "url": "https://api.github.com/repos/todoroo/astrid/git/commits/4fc5c7714fb1b48ae46dcacbda287bcef9c3f6bf",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null
+    }
+  },
+  "url": "https://api.github.com/repos/todoroo/astrid/commits/4fc5c7714fb1b48ae46dcacbda287bcef9c3f6bf",
+  "html_url": "https://github.com/todoroo/astrid/commit/4fc5c7714fb1b48ae46dcacbda287bcef9c3f6bf",
+  "comments_url": "https://api.github.com/repos/todoroo/astrid/commits/4fc5c7714fb1b48ae46dcacbda287bcef9c3f6bf/comments",
+  "author": {
+    "login": "sbosley",
+    "id": 622224,
+    "avatar_url": "https://avatars1.githubusercontent.com/u/622224?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/sbosley",
+    "html_url": "https://github.com/sbosley",
+    "followers_url": "https://api.github.com/users/sbosley/followers",
+    "following_url": "https://api.github.com/users/sbosley/following{/other_user}",
+    "gists_url": "https://api.github.com/users/sbosley/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/sbosley/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/sbosley/subscriptions",
+    "organizations_url": "https://api.github.com/users/sbosley/orgs",
+    "repos_url": "https://api.github.com/users/sbosley/repos",
+    "events_url": "https://api.github.com/users/sbosley/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/sbosley/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "sbosley",
+    "id": 622224,
+    "avatar_url": "https://avatars1.githubusercontent.com/u/622224?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/sbosley",
+    "html_url": "https://github.com/sbosley",
+    "followers_url": "https://api.github.com/users/sbosley/followers",
+    "following_url": "https://api.github.com/users/sbosley/following{/other_user}",
+    "gists_url": "https://api.github.com/users/sbosley/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/sbosley/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/sbosley/subscriptions",
+    "organizations_url": "https://api.github.com/users/sbosley/orgs",
+    "repos_url": "https://api.github.com/users/sbosley/repos",
+    "events_url": "https://api.github.com/users/sbosley/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/sbosley/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "498e76acb559ca7a3d9714983f1c3160ba25ecc3",
+      "url": "https://api.github.com/repos/todoroo/astrid/commits/498e76acb559ca7a3d9714983f1c3160ba25ecc3",
+      "html_url": "https://github.com/todoroo/astrid/commit/498e76acb559ca7a3d9714983f1c3160ba25ecc3"
+    }
+  ],
+  "stats": {
+    "total": 4,
+    "additions": 2,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "c9e182e502aa3395097f33c6c540d064910bd7e6",
+      "filename": "astrid/plugin-src/com/todoroo/astrid/tags/TagCustomFilterCriteriaExposer.java",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/todoroo/astrid/blob/4fc5c7714fb1b48ae46dcacbda287bcef9c3f6bf/astrid/plugin-src/com/todoroo/astrid/tags/TagCustomFilterCriteriaExposer.java",
+      "raw_url": "https://github.com/todoroo/astrid/raw/4fc5c7714fb1b48ae46dcacbda287bcef9c3f6bf/astrid/plugin-src/com/todoroo/astrid/tags/TagCustomFilterCriteriaExposer.java",
+      "contents_url": "https://api.github.com/repos/todoroo/astrid/contents/astrid/plugin-src/com/todoroo/astrid/tags/TagCustomFilterCriteriaExposer.java?ref=4fc5c7714fb1b48ae46dcacbda287bcef9c3f6bf",
+      "patch": "@@ -55,7 +55,7 @@ public void onReceive(Context context, Intent intent) {\n                                 Task.TABLE, Metadata.TASK.eq(Task.ID))).where(Criterion.and(\n                             TaskDao.TaskCriteria.activeAndVisible(),\n                             MetadataDao.MetadataCriteria.withKey(TaskToTagMetadata.KEY),\n-                            TaskToTagMetadata.TAG_NAME.eq(\"?\"))).toString(),\n+                            TaskToTagMetadata.TAG_NAME.eq(\"?\"), Metadata.DELETION_DATE.eq(0))).toString(),\n                     values, tagNames, tagNames,\n                     ((BitmapDrawable)r.getDrawable(TagService.getDefaultImageIDForTag(RemoteModel.NO_UUID))).getBitmap(),\n                     context.getString(R.string.CFC_tag_name));\n@@ -71,7 +71,7 @@ public void onReceive(Context context, Intent intent) {\n                                     Task.TABLE, Metadata.TASK.eq(Task.ID))).where(Criterion.and(\n                                             TaskDao.TaskCriteria.activeAndVisible(),\n                                             MetadataDao.MetadataCriteria.withKey(TaskToTagMetadata.KEY),\n-                                            TaskToTagMetadata.TAG_NAME.like(\"%?%\"))).toString(),\n+                                            TaskToTagMetadata.TAG_NAME.like(\"%?%\"), Metadata.DELETION_DATE.eq(0))).toString(),\n                                             null, context.getString(R.string.CFC_tag_contains_name), \"\",\n                                             ((BitmapDrawable)r.getDrawable(TagService.getDefaultImageIDForTag(RemoteModel.NO_UUID))).getBitmap(),\n                                             context.getString(R.string.CFC_tag_contains_name));"
+    }
+  ]
+}
