@@ -1,7 +1,7 @@
 # Android-popularity
 Title:
 
-Studying Android App Popularity by Cross-Linking GitHub and Google Play Stor
+Studying Android App Popularity by Cross-Linking GitHub and Google Play Store
 
 Abstract
 
