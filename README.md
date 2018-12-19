@@ -51,13 +51,13 @@ Please cite our work  - Bibtex
 
 @inproceedings{Businge:SANER-ANdroid,
  
- author = {Businge, John and Openja, Moses and Kavaler, David and Bainomugisha, Engineer and Khomh, Foutse and Filkov, Vladimir},
- 
- title = {Studying Android App Popularity by Cross-Linking GitHub and Google Play Store},
- 
- booktitle = {SANER},
- 
- year = {2019}
+   author = {Businge, John and Openja, Moses and Kavaler, David and Bainomugisha, Engineer and Khomh, Foutse and Filkov, Vladimir},
+
+   title = {Studying Android App Popularity by Cross-Linking GitHub and Google Play Store},
+
+   booktitle = {SANER},
+
+   year = {2019}
 }
 
 
