@@ -28,5 +28,36 @@ Requirements
 
 Data Mining Scripts
 
-•	Search_for_Repos.java – searching repositories on GitHub
+•	Search_for_Repos.java – Collecting Android App repositories on GitHub
+
+•	FindMLP_GooglePlayApps.java – Collects the Apps that are on Google Play store
+
+•	FindMLP_GooglePlayApps.java – Collects all the mainline variants on Google Play store
+
+•	Fetch_CommitsDetail.java - Collects commit details of the Apps that include, contributors login, names, email address, commit dates, changed LOC/commit, etc
+
+•	PullRequests.java - Collects the pull requests of the Apps
+
+•	Collect_GooglePlayStatistics.java - Collects Apps Google Play meta-data
+
+•	Count_ActiveFP.java - Collects active forks
+
+•	Developer_MJ_MN.java - Collects the code authorship metrics (i.e., major, minor and most valuable author-MVA)
+
+========================================================================
+
+
+Please cite our work  - Bibtex
+
+@inproceedings{Businge:SANER-ANdroid,
+ 
+ author = {Businge, John and Openja, Moses and Kavaler, David and Bainomugisha, Engineer and Khomh, Foutse and Filkov, Vladimir},
+ 
+ title = {Studying Android App Popularity by Cross-Linking GitHub and Google Play Store},
+ 
+ booktitle = {SANER},
+ 
+ year = {2019}
+}
+
 
