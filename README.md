@@ -42,6 +42,20 @@ Data Mining Scripts
 
 •	com.opm.popularity.source_datacollection.CollectProjects_Languages.java - Collects the languange of the main line projects.
 
+=========================================================================
+
+Data Analysis Scripts
+
+•	com.opm.popularity.source_analysis.MaJor_Minor_MVAStatistics.java – Identify user experience and Catergorise as major, minor, Most valuable Author (MVA) etc.
+
+•	com.opm.popularity.source_analysis.Merge_Developers_BYLogin.java – Merges the repos developers based on the same login details.
+
+•	com.opm.popularity.source_analysis.Merge_MLP_FPCommits.java – Merges commits details of the mainline and the fork projects 
+
+•	com.opm.popularity.source_analysis.EliminateRepos_Less6Commits.java - Eliminates all the repos with less than six (6) commits.
+
+•	com.opm.popularity.source_analysis.UniqueMerged_Statistics.java - Identify both the unique and the merged commits of a fork project.
+
 ========================================================================
 
 
