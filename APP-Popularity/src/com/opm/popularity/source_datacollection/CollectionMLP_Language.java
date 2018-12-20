@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.opm.popularity.source_analysis;
+package com.opm.popularity.source_datacollection;
 
 import com.opm.popularity.core.Call_URL;
 import com.opm.popularity.excel_.Create_ExcelFile;
