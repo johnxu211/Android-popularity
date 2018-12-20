@@ -28,21 +28,19 @@ Requirements
 
 Data Mining Scripts
 
-•	Search_for_Repos.java – Collecting Android App repositories on GitHub
+•	com.opm.popularity.source_datacollection.Search_AndroidRepos.java – Collecting Android App repositories on GitHub
 
-•	FindMLP_GooglePlayApps.java – Collects the Apps that are on Google Play store
+•	com.opm.popularity.source_datacollection.Collect_Repos_Forks.java – Collects the the forks of the main line projects.
 
-•	FindMLP_GooglePlayApps.java – Collects all the mainline variants on Google Play store
+•	com.opm.popularity.source_datacollection.CollectML_FPCommitsFullDetails.java – Collects all the commits details of both the main line project and its forks.that include, contributors login, names, email address, commit dates, changed LOC/commit, etc
 
-•	Fetch_CommitsDetail.java - Collects commit details of the Apps that include, contributors login, names, email address, commit dates, changed LOC/commit, etc
+•	com.opm.popularity.source_datacollection.CollectFork_UniqueCommits.java - Identify all the unique commits of the fork projects 
 
-•	PullRequests.java - Collects the pull requests of the Apps
+•	com.opm.popularity.source_datacollection.Collect_ForksFirstLastCommits.java - Collect the first and the last commit dates of the fork projects.
 
-•	Collect_GooglePlayStatistics.java - Collects Apps Google Play meta-data
+•	com.opm.popularity.source_datacollection.CollectPullrequest_Statisticts.java - Collects Apps pull requests including the direction of the pull request.
 
-•	Count_ActiveFP.java - Collects active forks
-
-•	Developer_MJ_MN.java - Collects the code authorship metrics (i.e., major, minor and most valuable author-MVA)
+•	com.opm.popularity.source_datacollection.CollectProjects_Languages.java - Collects the languange of the main line projects.
 
 ========================================================================
 
